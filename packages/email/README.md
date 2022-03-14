@@ -1,12 +1,13 @@
-# `@hkamran/utility-email`
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](../../LICENSE.md) [![npm version](https://badge.fury.io/js/%40hkamran%2Futility-email.svg)](https://badge.fury.io/js/%40hkamran%2Futility-email.svg)
+# [`@hkamran/utility-email`](https://www.npmjs.com/package/@hkamran/utility-email)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL3.0-green.svg)](../../LICENSE.md) [![npm version](https://badge.fury.io/js/%40hkamran%2Futility-email.svg)](https://badge.fury.io/js/%40hkamran%2Futility-email.svg)
 
-A scaffolding system for Vite-powered Vue 3 (TypeScript) apps
+An easy way to send emails (powered by Nodemailer)
 
 ## Installation
 ```bash
 $ npm i @hkamran/utility-email
 ```
+
 ## Usage
 1. Create a transport client with `createClient` function, passing the server name
     - Make sure the environment variables `SMTP_HOSTNAME`, `SMTP_PORT`, `SMTP_USERNAME`, and `SMTP_PASSWORD` are set
