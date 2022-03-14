@@ -1,8 +1,9 @@
 {
     "name": "@hkamran/utility-email",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "An easy way to send emails (powered by Nodemailer)",
     "main": "index.js",
+    "types": "types.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
