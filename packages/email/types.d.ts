@@ -1,5 +1,5 @@
 import type { Transporter } from "nodemailer";
-import { Attachment } from "nodemailer/lib/mailer";
+import type { Attachment } from "nodemailer/lib/mailer";
 
 declare function createClient(serverName: string): Transporter;
 declare function sendEmail(
@@ -9,6 +9,6 @@ declare function sendEmail(
     subject: string,
     html: string,
     plainText: string,
-    attachments: Attachment[] = [],
-    listUnsubscribe: string | null = null
+    attachments: Attachment[],
+    listUnsubscribe: string | null
 ): Promise<void>;
