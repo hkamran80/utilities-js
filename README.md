@@ -3,6 +3,7 @@ A collection of utilities for JavaScript and TypeScript projects
 
 ## Utilities
 - [`@hkamran/utility-email`](https://www.npmjs.com/package/@hkamran/utility-email) ([GitHub](./packages/email/README.md)): An easy way to send emails (powered by Nodemailer)
+- [`@hkamran/utility-strings`](https://www.npmjs.com/package/@hkamran/utility-strings) ([GitHub](./packages/strings/README.md)): A collection of string utilities
 
 ## License
 This program is licensed under the [AGPLv3 license](https://choosealicense.com/licenses/agpl-3.0/).

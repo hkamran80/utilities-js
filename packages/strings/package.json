@@ -1,7 +1,7 @@
 {
-    "name": "@hkamran/utility-email",
-    "version": "1.0.0",
-    "description": "An easy way to send emails (powered by Nodemailer)",
+    "name": "@hkamran/utility-strings",
+    "version": "1.0.0-beta.0",
+    "description": "A collection of string utilities",
     "main": "index.js",
     "types": "types.d.ts",
     "type": "module",
@@ -16,19 +16,16 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/hkamran80/utilities-js.git",
-        "directory": "packages/email"
+        "directory": "packages/strings"
     },
     "keywords": [
-        "email",
-        "nodemailer"
+        "strings",
+        "string"
     ],
     "license": "AGPL-3.0-or-later",
     "bugs": {
         "url": "https://github.com/hkamran80/utilities-js/issues"
     },
     "homepage": "https://github.com/hkamran80/utilities-js#readme",
-    "dependencies": {
-        "dotenv": "^16.0.0",
-        "nodemailer": "^6.7.2"
-    }
+    "dependencies": {}
 }
