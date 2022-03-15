@@ -1,11 +1,12 @@
 {
     "name": "@hkamran/utility-strings",
-    "version": "1.0.0-beta.0",
+    "version": "1.0.0-beta.2",
     "description": "A collection of string utilities",
     "main": "index.js",
-    "types": "types.d.ts",
+    "types": "index.d.ts",
     "type": "module",
     "scripts": {
+        "prepare": "tsc --declaration --emitDeclarationOnly --allowJs index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": {
@@ -24,8 +25,10 @@
     ],
     "license": "AGPL-3.0-or-later",
     "bugs": {
-        "url": "https://github.com/hkamran80/utilities-js/issues"
+        "url": "https://github.com/hkamran80/utilities-js/issues?q=is%3Aopen+label%3A%22utility%3A+strings%22+sort%3Aupdated-desc"
     },
-    "homepage": "https://github.com/hkamran80/utilities-js#readme",
-    "dependencies": {}
+    "homepage": "https://github.com/hkamran80/utilities-js/tree/main/packages/strings#readme",
+    "devDependencies": {
+        "typescript": "^4.6.2"
+    }
 }
