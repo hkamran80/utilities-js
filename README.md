@@ -2,8 +2,11 @@
 A collection of utilities for JavaScript and TypeScript projects
 
 ## Utilities
-- [`@hkamran/utility-email`](https://www.npmjs.com/package/@hkamran/utility-email) ([GitHub](./packages/email/README.md)): An easy way to send emails (powered by Nodemailer)
-- [`@hkamran/utility-strings`](https://www.npmjs.com/package/@hkamran/utility-strings) ([GitHub](./packages/strings/README.md)): A collection of string utilities
+- [`@hkamran/utility-email`](https://www.npmjs.com/package/@hkamran/utility-email) ([folder](./packages/email/README.md)): An easy way to send emails (powered by Nodemailer)
+- [`@hkamran/utility-strings`](https://www.npmjs.com/package/@hkamran/utility-strings) ([folder](./packages/strings/README.md)): A collection of string utilities
+- [`@hkamran/utility-datetime`](https://www.npmjs.com/package/@hkamran/utility-datetime) ([folder](./packages/datetime/README.md)): A collection of date and time utilities
+- [`@hkamran/utility-web`](https://www.npmjs.com/package/@hkamran/utility-web) ([folder](./packages/web/README.md)): A collection of web utilities
+- `@hkamran/utility-harperdb` ([folder](./packages/harperdb-rest/README.md)): A library to interact with HarperDB
 
 ## License
 This program is licensed under the [AGPLv3 license](https://choosealicense.com/licenses/agpl-3.0/).

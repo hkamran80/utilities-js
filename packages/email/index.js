@@ -43,7 +43,7 @@ export const createClient = (serverName) => {
  * @param {string} subject - The email's subject
  * @param {string} html - The HTML version of the email
  * @param {string} plainText - The plain-text version of the email
- * @param {import("nodemailer/lib/mailer").Attachment[]} [attachments=[]] - A list of attachments
+ * @param {import("nodemailer/lib/mailer").Attachment[]} [attachments] - A list of attachments
  * @param {string|null} [listUnsubscribe=null] - The `List-Unsubscribe` header
  */
 export const sendEmail = async (

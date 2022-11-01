@@ -1,7 +1,7 @@
 {
-    "name": "@hkamran/utility-strings",
-    "version": "1.0.2",
-    "description": "A collection of string utilities",
+    "name": "@hkamran/utility-web",
+    "version": "1.0.1",
+    "description": "A collection of web utilities",
     "main": "index.js",
     "types": "index.d.ts",
     "type": "module",
@@ -17,17 +17,20 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/hkamran80/utilities-js.git",
-        "directory": "packages/strings"
+        "directory": "packages/web"
     },
     "keywords": [
-        "string",
-        "strings"
+        "web",
+        "dev",
+        "webdev",
+        "utility"
     ],
     "license": "AGPL-3.0-or-later",
     "bugs": {
-        "url": "https://github.com/hkamran80/utilities-js/issues?q=is%3Aopen+label%3A%22utility%3A+strings%22+sort%3Aupdated-desc"
+        "url": "https://github.com/hkamran80/utilities-js/issues?q=is%3Aopen+label%3A%22utility%3A+web%22+sort%3Aupdated-desc"
     },
-    "homepage": "https://github.com/hkamran80/utilities-js/tree/main/packages/strings#readme",
+    "homepage": "https://github.com/hkamran80/utilities-js/tree/main/packages/web#readme",
+    "dependencies": {},
     "devDependencies": {
         "typescript": "^4.6.2"
     }

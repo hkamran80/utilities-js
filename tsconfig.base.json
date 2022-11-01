@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "allowJs": true,
+        "removeComments": false
+    }
+}

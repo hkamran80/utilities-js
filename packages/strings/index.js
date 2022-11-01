@@ -1,7 +1,7 @@
 /**
  * Format a number with commas
  * @param {number|string} number - The number to format
- * @returns Formatted number
+ * @returns {string} Formatted number
  */
 export const numberWithCommas = (number) => {
     const parts = number.toString().split(".");
@@ -12,10 +12,30 @@ export const numberWithCommas = (number) => {
 /**
  * Prefix numbers less than ten with a leading zero
  * @param {number|string} number - The number to pad
- * @returns The padded number
+ * @returns {string} The padded number
  */
-export const padNumber = (number) => {
-    return Number(number < 10)
+export const padNumber = (number) =>
+    Number(number < 10)
         ? "0" + Number(number).toString()
         : Number(number).toString();
-};
+
+/**
+ * Capitalize the first letter of a string
+ * @param {string} string - The string to capitalize the first letter of
+ * @returns {string} The string with the first character capitalized
+ */
+export const capitalizeFirstLetter = (string) =>
+    string.charAt(0).toUpperCase() + string.slice(1);
+
+/**
+ * Generate a "slugified" version of a string
+ *
+ * Strips a string of non-alphanumeric characters, and replaces spaces with dashes
+ * @param {string} string - The string to "slugify"
+ * @returns {string} The "slugified" string
+ */
+export const slugify = (string) =>
+    string
+        .replace(/[^A-Za-z0-9\s]/gm, "")
+        .replace(/ /gm, "-")
+        .toLowerCase();

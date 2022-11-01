@@ -1,7 +1,7 @@
 {
-    "name": "@hkamran/utility-strings",
-    "version": "1.0.2",
-    "description": "A collection of string utilities",
+    "name": "@hkamran/utility-datetime",
+    "version": "1.0.3",
+    "description": "A collection of date and time utilities",
     "main": "index.js",
     "types": "index.d.ts",
     "type": "module",
@@ -17,17 +17,18 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/hkamran80/utilities-js.git",
-        "directory": "packages/strings"
+        "directory": "packages/datetime"
     },
     "keywords": [
-        "string",
-        "strings"
+        "date",
+        "time",
+        "datetime"
     ],
     "license": "AGPL-3.0-or-later",
     "bugs": {
-        "url": "https://github.com/hkamran80/utilities-js/issues?q=is%3Aopen+label%3A%22utility%3A+strings%22+sort%3Aupdated-desc"
+        "url": "https://github.com/hkamran80/utilities-js/issues?q=is%3Aopen+label%3A%22utility%3A+datetime%22+sort%3Aupdated-desc"
     },
-    "homepage": "https://github.com/hkamran80/utilities-js/tree/main/packages/strings#readme",
+    "homepage": "https://github.com/hkamran80/utilities-js/tree/main/packages/datetime#readme",
     "devDependencies": {
         "typescript": "^4.6.2"
     }
