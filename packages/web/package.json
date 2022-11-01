@@ -1,6 +1,6 @@
 {
     "name": "@hkamran/utility-web",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A collection of web utilities",
     "main": "index.js",
     "types": "index.d.ts",
