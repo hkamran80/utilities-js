@@ -1,0 +1,50 @@
+{
+    "name": "@hkamran/utility-assets",
+    "version": "1.0.0",
+    "description": "A quick way to set up an assets site",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "type": "module",
+    "scripts": {
+        "lint": "eslint --ext .js,.ts --fix",
+        "format": "prettier . --write",
+        "prepare": "tsc --declaration --emitDeclarationOnly --allowJs index.js && pnpm lint && pnpm format",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": {
+        "name": "H. Kamran",
+        "email": "hkamran@hkamran.com",
+        "url": "https://hkamran.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hkamran80/utilities-js.git",
+        "directory": "packages/assets"
+    },
+    "keywords": [
+        "assets",
+        "site",
+        "website",
+        "move",
+        "files",
+        "filesystem",
+        "fs",
+        "folder",
+        "folders",
+        "json",
+        "css"
+    ],
+    "license": "AGPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/hkamran80/utilities-js/issues?q=is%3Aopen+label%3A%22utility%3A+assets%22+sort%3Aupdated-desc"
+    },
+    "homepage": "https://github.com/hkamran80/utilities-js/tree/main/packages/assets#readme",
+    "devDependencies": {
+        "@hkamran/prettier-config": "^1.1.1",
+        "eslint": "^8.36.0",
+        "eslint-config-prettier": "^8.7.0",
+        "prettier": "^2.8.4",
+        "typescript": "^4.6.2"
+    },
+    "prettier": "@hkamran/prettier-config"
+}
