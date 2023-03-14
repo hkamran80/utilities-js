@@ -39,6 +39,9 @@
         "url": "https://github.com/hkamran80/utilities-js/issues?q=is%3Aopen+label%3A%22utility%3A+assets%22+sort%3Aupdated-desc"
     },
     "homepage": "https://github.com/hkamran80/utilities-js/tree/main/packages/assets#readme",
+    "publishConfig": {
+        "access": "public"
+    },
     "devDependencies": {
         "@hkamran/prettier-config": "^1.1.1",
         "eslint": "^8.36.0",
