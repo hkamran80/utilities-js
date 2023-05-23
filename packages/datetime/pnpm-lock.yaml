@@ -1,12 +1,20 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
+  '@hkamran/utility-strings': ^1.0.2
   typescript: ^4.6.2
+
+dependencies:
+  '@hkamran/utility-strings': 1.0.2
 
 devDependencies:
   typescript: 4.6.2
 
 packages:
+
+  /@hkamran/utility-strings/1.0.2:
+    resolution: {integrity: sha512-1ATi574+I/hQjxl39ppK43X8KsvzxOn19sfdA4U/Zc1q0QHhhaMK/hcM4m1NWOD1GRQTSR0fhHFVdgUcUhtRzg==}
+    dev: false
 
   /typescript/4.6.2:
     resolution: {integrity: sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==}

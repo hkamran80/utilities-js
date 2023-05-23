@@ -1,3 +1,5 @@
+import { padNumber } from "@hkamran/utility-strings";
+
 /** @typedef {{ [shortName: string]: string }} Weekday */
 
 /**
@@ -84,5 +86,35 @@ export const convert24HourTo12Hour = (time) => {
 
     return (
         hour + `:${baseTime[1]} ` + (Number(baseTime[0]) >= 12 ? "PM" : "AM")
+    );
+};
+
+/**
+ * Convert a `Date` to a timezone-offset ISO string
+ * 
+ * Original source: [Stack Overflow answer by Steven Moseley](https://stackoverflow.com/a/17415677)
+ * @param {Date} date - The date to convert to a timezone-offset ISO string
+ * @returns {string} A timezone-offset ISO string
+ */
+export const convertToTimezoneOffsetISOString = (date) => {
+    const timezoneOffset = -date.getTimezoneOffset(),
+        operation = timezoneOffset >= 0 ? "+" : "-";
+
+    return (
+        date.getFullYear() +
+        "-" +
+        padNumber(date.getMonth() + 1) +
+        "-" +
+        padNumber(date.getDate()) +
+        "T" +
+        padNumber(date.getHours()) +
+        ":" +
+        padNumber(date.getMinutes()) +
+        ":" +
+        padNumber(date.getSeconds()) +
+        operation +
+        padNumber(Math.floor(Math.abs(timezoneOffset) / 60)) +
+        ":" +
+        padNumber(Math.abs(timezoneOffset) % 60)
     );
 };

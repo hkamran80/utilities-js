@@ -1,6 +1,6 @@
 {
     "name": "@hkamran/utility-datetime",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A collection of date and time utilities",
     "main": "index.js",
     "types": "index.d.ts",
@@ -31,5 +31,8 @@
     "homepage": "https://github.com/hkamran80/utilities-js/tree/main/packages/datetime#readme",
     "devDependencies": {
         "typescript": "^4.6.2"
+    },
+    "dependencies": {
+        "@hkamran/utility-strings": "^1.0.2"
     }
 }
