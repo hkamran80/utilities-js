@@ -1,6 +1,6 @@
 {
     "name": "@hkamran/utility-strings",
-    "version": "1.0.4.1",
+    "version": "1.0.5",
     "description": "A collection of string utilities",
     "main": "index.js",
     "types": "index.d.ts",
