@@ -34,7 +34,7 @@ export function slugify(string: string): string;
  * @returns {string} A random alphanumeric string of a specified length
  */
 export function generateRandomString(length: number, options?: {
-    uppercase: boolean;
-    lowercase: boolean;
-    numbers: boolean;
+    uppercase?: boolean;
+    lowercase?: boolean;
+    numbers?: boolean;
 }): string;
