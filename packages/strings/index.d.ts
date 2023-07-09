@@ -27,6 +27,14 @@ export function slugify(string: string): string;
 /**
  * Generate a random alphanumeric string of a specified length
  * @param {number} length The length of the string to generate
+ * @param {Object} [options={uppercase: true, lowercase: true, numbers: true}] Options that can be passed to customize the output
+ * @param {boolean} options.uppercase Allow uppercase strings
+ * @param {boolean} options.lowercase Allow lowercase strings
+ * @param {boolean} options.numbers Allow numbers
  * @returns {string} A random alphanumeric string of a specified length
  */
-export function generateRandomString(length: number): string;
+export function generateRandomString(length: number, options?: {
+    uppercase: boolean;
+    lowercase: boolean;
+    numbers: boolean;
+}): string;

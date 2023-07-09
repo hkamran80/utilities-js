@@ -45,13 +45,32 @@ export const slugify = (string) =>
 /**
  * Generate a random alphanumeric string of a specified length
  * @param {number} length The length of the string to generate
+ * @param {Object} [options={uppercase: true, lowercase: true, numbers: true}] Options that can be passed to customize the output
+ * @param {boolean} options.uppercase Allow uppercase strings
+ * @param {boolean} options.lowercase Allow lowercase strings
+ * @param {boolean} options.numbers Allow numbers
  * @returns {string} A random alphanumeric string of a specified length
  */
-export const generateRandomString = (length) => {
+export const generateRandomString = (
+    length,
+    options = { uppercase: true, lowercase: true, numbers: true }
+) => {
+    let generatedCharacters = "";
+    let optionKeys = Object.keys(options);
+    if (options.uppercase || !optionKeys.includes("uppercase")) {
+        generatedCharacters += characters.slice(0, 26);
+    }
+    if (options.lowercase || !optionKeys.includes("lowercase")) {
+        generatedCharacters += characters.slice(26, 52);
+    }
+    if (options.numbers || !optionKeys.includes("numbers")) {
+        generatedCharacters += characters.slice(52);
+    }
+
     let result = "";
-    const charactersLength = characters.length;
+    const charactersLength = generatedCharacters.length;
     for (let i = 0; i < length; i++) {
-        result += characters.charAt(
+        result += generatedCharacters.charAt(
             Math.floor(Math.random() * charactersLength)
         );
     }
