@@ -1,12 +1,12 @@
 {
     "name": "@hkamran/utility-strings",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A collection of string utilities",
     "main": "index.js",
     "types": "index.d.ts",
     "type": "module",
     "scripts": {
-        "prepare": "tsc --declaration --emitDeclarationOnly --allowJs index.js",
+        "create:declaration": "tsc --declaration --emitDeclarationOnly --allowJs index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": {
