@@ -4,11 +4,13 @@ export function minifyJSON(
     excludeSchemas?: string,
 ): Promise<void>;
 export function minifyCSS(basePath: string, outputDir: string): Promise<void>;
+export const ignoredFilenameContents: string[];
+export const ignoredFileExtensions: string[];
 export function moveFiles(
     basePath: string,
     outputDir: string,
-    ignoredFilenameContents?: string[],
-    ignoredFileExtensions?: string[],
+    _ignoredFilenameContents?: string[],
+    _ignoredFileExtensions?: string[],
 ): Promise<void>;
 export function moveFolder(basePath: string, outputDir: string): Promise<void>;
 /** @type {string} */

@@ -123,8 +123,8 @@ export const ignoredFileExtensions = ["json", "css", "toml", "md"];
 export const moveFiles = async (
     basePath,
     outputDir,
-    ignoredFilenameContents = ignoredFilenameContents,
-    ignoredFileExtensions = ignoredFileExtensions,
+    _ignoredFilenameContents = ignoredFilenameContents,
+    _ignoredFileExtensions = ignoredFileExtensions,
 ) => {
     (await readdir(basePath, { withFileTypes: true }))
         .filter((item) => item.isFile())
@@ -132,8 +132,8 @@ export const moveFiles = async (
         .filter(
             (filename) =>
                 !filename.startsWith(".") &&
-                !checkIgnoredContents(filename, ignoredFilenameContents) &&
-                !checkIgnoredEndings(filename, ignoredFileExtensions),
+                !checkIgnoredContents(filename, _ignoredFilenameContents) &&
+                !checkIgnoredEndings(filename, _ignoredFileExtensions),
         )
         .forEach(
             async (filename) =>
