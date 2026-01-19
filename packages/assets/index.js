@@ -1,3 +1,4 @@
+import { existsSync } from "fs";
 import {
     constants,
     copyFile,
@@ -109,6 +110,9 @@ const checkIgnoredEndings = (check, ignoredEndings) => {
     return false;
 };
 
+export const ignoredFilenameContents = ["schema"];
+export const ignoredFileExtensions = ["json", "css", "toml", "md"];
+
 /**
  * Move files
  * @param {string} basePath The base path to use
@@ -119,8 +123,8 @@ const checkIgnoredEndings = (check, ignoredEndings) => {
 export const moveFiles = async (
     basePath,
     outputDir,
-    ignoredFilenameContents = ["schema"],
-    ignoredFileExtensions = ["json", "css", "toml", "md"],
+    ignoredFilenameContents = ignoredFilenameContents,
+    ignoredFileExtensions = ignoredFileExtensions,
 ) => {
     (await readdir(basePath, { withFileTypes: true }))
         .filter((item) => item.isFile())
@@ -147,9 +151,7 @@ export const moveFiles = async (
  * @param {string} outputDir The output directory (optional)
  */
 export const moveFolder = async (basePath, outputDir) => {
-    if (outputDir) {
-        await mkdir(outputDir);
-    }
+    if (outputDir && !existsSync(outputDir)) await mkdir(outputDir);
 
     (await readdir(basePath, { withFileTypes: true })).forEach(async (item) => {
         if (item.isFile()) {
