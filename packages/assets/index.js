@@ -175,4 +175,4 @@ export const basePath = process.cwd();
 /** @type {string} */
 export const baseOutputPath = join(basePath, "dist");
 
-await mkdir(baseOutputPath);
+if (!existsSync(outputDir)) await mkdir(baseOutputPath);
