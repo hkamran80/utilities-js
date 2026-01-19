@@ -140,7 +140,7 @@ export const moveFiles = async (
                 await copyFile(
                     join(basePath, filename),
                     join(outputDir, filename),
-                    constants.COPYFILE_EXCL,
+                    constants.COPYFILE_FICLONE,
                 ),
         );
 };
@@ -158,7 +158,7 @@ export const moveFolder = async (basePath, outputDir) => {
             await copyFile(
                 join(basePath, item.name),
                 join(outputDir, item.name),
-                constants.COPYFILE_EXCL,
+                constants.COPYFILE_FICLONE,
             );
         } else if (item.isDirectory()) {
             await moveFolder(
